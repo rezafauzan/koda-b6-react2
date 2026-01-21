@@ -9,3 +9,4 @@ create react app to render 2 button one to increase number one to decrease numbe
 - npm i react react-dom tailwindcss @tailwindcss/vite
 - npm run dev
 - open localhost:5173 in browser
+- or download released source code and open index.html
