@@ -1,0 +1,31 @@
+{
+  "name": "koda-b6-react2",
+  "version": "1.0.0",
+  "description": "Create counter app styling using tailwindcss",
+  "homepage": "https://github.com/rezafauzan/koda-b6-react2#readme",
+  "bugs": {
+    "url": "https://github.com/rezafauzan/koda-b6-react2/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rezafauzan/koda-b6-react2.git"
+  },
+  "license": "MIT",
+  "author": "Reza Fauzan Adhima",
+  "type": "module",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.18",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "tailwindcss": "^4.1.18"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.1.2",
+    "vite": "^7.3.1"
+  }
+}
