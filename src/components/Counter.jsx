@@ -2,26 +2,18 @@ import React from "react"
 import Input from "./Input"
 import Button from "./Button"
 
+/**
+ * 
+ * @returns {React.JSX.Element}
+ */
 export default function Counter() {
-    let [number, setNumber] = React.useState(0)
-    function decrement() {
-        if (number > 0) {
-            number = number - 1
-            setNumber(number)
-        }
-    }
-    function increment() {
-        if (number < 10) {
-            number = number + 1
-            setNumber(number)
-        }
-    }
+    let [number, setNumber] = React.useState(0) // [number ; setter]
 
     return (
         <div className="flex">
-            <Button callback={decrement}>-</Button>
+            <Button theme={"blue"} currentState={number} setter={setNumber} increment={false}>-</Button>
             <Input number={number}/>
-            <Button callback={increment}>+</Button>
+            <Button currentState={number} setter={setNumber} increment={true}>+</Button>
         </div>
     )
 }
