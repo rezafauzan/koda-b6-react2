@@ -1,7 +1,12 @@
 /**
-* @param {Function} setter 
+ * @callback stateSetter
+ * @param {number} newValue
+ * @returns {void}
+ */
+/**
+* @param {stateSetter} setter
 * @param {number} getter 
-* @param {true|false} increment 
+* @param {boolean} increment 
 */
 function increaseDecrease(setter, getter, increment = true) {
     if (increment) {
@@ -34,6 +39,7 @@ const Button = (props) => {
 
     function execute() {
         increaseDecrease(setter, currentState, increment)
+        increaseDecrease()
     }
     return (
         <button className={(theme === "blue" ? "bg-blue-400 text-white " : "bg-white ") + "border border-black/40 p-4  rounded shadow-xl cursor-pointer"} {...buttonDefault} onClick={execute}>{props.children}</button>
